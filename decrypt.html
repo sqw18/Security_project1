@@ -1,0 +1,129 @@
+<html>
+<head>
+<title> Decryption</title>
+<meta name="viewport" content="width=device-width, initialscale=1.0">
+
+<style>
+    *{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    
+    .center {
+margin-left: auto;
+margin-right: auto;
+}
+#d1{
+
+background-color:#ecf9ef;
+height: 200px;
+  width: 50%;
+margin-left: 300px;
+
+}
+
+#but{
+    color: #050505; 
+                background-color:#c5c5c5;
+    
+
+border: none;
+
+padding: 4px 15px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 15px;
+border-radius: 3px;
+margin: 15px;
+
+
+}
+#but:hover{
+    color: #f2f8f3; 
+                background-color:#148b42;
+                border-color: #050505;
+                transition: all 0.3s ease 0s;
+
+}
+
+</style>
+</head>
+
+
+
+<body>
+    <h2> <img src="PHOTO-2023-04-29-04-13-54.jpg" style="height: 100px; width: 100px; margin-left: 565px;" > </h2>
+
+<h1 style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">RSA Algorithm</h1>
+<hr>
+<div id = "d1">
+
+<table class="center">
+
+
+
+<tr><td>
+    <label>Enter the ciphertext : </label> <br> <br>
+    <input type="text" id="cip" placeholder="integer number (0,33) only"></p>
+    <p>
+
+</td>
+</tr>
+
+<tr>
+    <td>the Plaintext : </td>
+    <td> 
+    <p id="ciphertext(ct)"></p>
+    </td>
+    </tr>
+   <br> 
+<tr>
+
+
+
+
+
+
+
+    <td> <button id = "but" onclick="RSA(); " style="margin-left: 30px;" > Decrypt </button> </td>
+    </tr>
+    </table> </div>
+
+    </body>
+
+
+ 
+    <script type="text/javascript">
+        function RSA() {
+        var  p, q, mo, n, t,d;
+        
+        p = 3;
+        q = 11;
+        mo = document.getElementById('cip').value;
+        n = p * q;
+        t = (p - 1) * (q - 1);
+    
+    e=7;
+    d=3;
+    if(mo<n && (mo>0 || mo ==0 )){
+    
+    dtt = Math.pow(mo, d).toFixed(0);
+    dt = dtt % n;
+    document.getElementById('ciphertext(ct)').innerHTML = dt;
+    }else{document.getElementById('ciphertext(ct)').innerHTML = "Out of the Rang !";}
+    
+    
+    
+    
+    
+    }
+    </script>
+
+
+
+
+
+
+
+</html>

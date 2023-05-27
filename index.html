@@ -12,6 +12,7 @@
         .center {
     margin-left: auto;
     margin-right: auto;
+    font-size: 20px ;
     }
     #d1{
     
@@ -23,27 +24,24 @@
     }
     
     #but{
-        color: #050505; 
-                    background-color:#c5c5c5;
-        
-    
+    color: #050505; 
+    background-color:#c5c5c5;
     border: none;
-    
     padding: 4px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 15px;
-    border-radius: 3px;
-    margin: 15px;
+    border-radius: 55px;
+    margin: 10px;
     
     
     }
     #but:hover{
         color: #f2f8f3; 
-                    background-color:#148b42;
-                    border-color: #050505;
-                    transition: all 0.3s ease 0s;
+        background-color:#148b42;
+        border-color: #050505;
+        transition: all 0.3s ease 0s;
     
     }
     
@@ -54,45 +52,26 @@
     <h2> <img src="PHOTO-2023-04-29-04-13-54.jpg" style="height: 100px; width: 100px; margin-left: 565px;" > </h2>
 
 <h1 style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">RSA Algorithm</h1>
-<!--<h2 style="text-align: center;">Implemented Using HTML & Javascript</h2>-->
 <hr>
 <div id = "d1">
 
 <table class="center">
-
+    <tr><td>
+<p style="margin-left: 15px; margin-bottom: 10px ;"> You want to ? </p> </td></tr>
 <tr>
-<td>Enter the Message :<br></td>
-<td><input type="" value="" id="msg" placeholder="integer number (0,33) only">
+<td><button id = "but" href="encrypt.html" > Encryption </button>
 </td>
 </tr>
 <br>
-<tr>
-    <td>Cipher Text(c):</td>
-    <td>
-    <p id="ciphertext(ct)"></p>
-    </td>
-    </tr>
+
    <br> 
 <tr>
-<td>Enter the Cipher :<br></td>
-<td><input type="" value="" id="cip" placeholder="integer number (0,33) only" ></p>
+
+<td><button id = "but" href="decrypt.html" > Decryption </button>
 </td>
 </tr>
 
 
-
-<tr>
-<td>the Message:</td>
-<td>
-<p id="ms"></p>
-</td>
-</tr>
-<tr>
-    <tr>
-
-
-    <td> <button id = "but" onclick="RSA();" > Apply RSA </button> </td>
-    </tr>
     </table> </div>
 
     </body>
