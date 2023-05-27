@@ -112,14 +112,14 @@ margin: 15px;
 
 e=7;
 d=3;
-if(no<n){
+if(no<n && (n0>0 || n0 ==0 )){
 
 ctt = Math.pow(no, e).toFixed(0);
 ct = ctt % n;
 document.getElementById('ciphertext(ct)').innerHTML = ct;
 }else{document.getElementById('ciphertext(ct)').innerHTML = "Out of the Rang !";}
 
-if(mo<n){
+if(mo<n && (m0>0 || m0 ==0 )){
 
 dtt = Math.pow(mo, d).toFixed(0);
 dt = dtt % n;
